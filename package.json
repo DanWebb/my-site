@@ -1,0 +1,22 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "The personal website of Dan Webb",
+  "private": true,
+  "author": "Dan Webb <mail@danwebb.co> (https://danwebb.co)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "build": "node build.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "metalsmith": "2.3.0",
+    "metalsmith-with-postcss": "1.1.0",
+    "postcss-preset-env": "6.7.0",
+    "stylelint": "10.1.0",
+    "stylelint-config-recommended": "2.2.0"
+  }
+}

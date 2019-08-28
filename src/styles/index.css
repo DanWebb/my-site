@@ -1,0 +1,7 @@
+.test {
+  display: block;
+
+  & .testy {
+    display: block;
+  }
+}
