@@ -1,8 +1,11 @@
 {
   "source": "src",
-  "destination": "dist",
+  "destination": "build",
   "clean": true,
   "plugins": {
+    "metalsmith-layouts": {
+      "directory": "src/layouts"
+    },
     "metalsmith-with-postcss": {
       "plugins": {
         "postcss-preset-env": {
