@@ -1,0 +1,16 @@
+{
+  "source": "src",
+  "destination": "dist",
+  "clean": true,
+  "plugins": {
+    "metalsmith-with-postcss": {
+      "plugins": {
+        "postcss-preset-env": {
+          "features": {
+            "nesting-rules": true
+          }
+        }
+      }
+    }
+  }
+}
