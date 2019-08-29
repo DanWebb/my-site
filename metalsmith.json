@@ -1,6 +1,6 @@
 {
   "source": "src",
-  "destination": "build",
+  "destination": "public",
   "clean": true,
   "plugins": {
     "metalsmith-layouts": {
