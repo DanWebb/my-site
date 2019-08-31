@@ -1,6 +1,4 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 @import './fonts.css';
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-}
+@import './base.css';
+@import './header.css';
