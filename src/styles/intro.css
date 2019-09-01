@@ -1,5 +1,5 @@
 .intro {
-  padding-top: 3.5em;
+  margin: 4em 0;
 
   & .intro__title {
     color: var(--color-black);
@@ -13,7 +13,14 @@
   }
 
   & .intro__content {
-    font-size: 2em;
+    font-size: 1.75em;
     max-width: 20em;
+  }
+
+  & .intro__socials {
+    position: absolute;
+    width: 2em;
+    bottom: 0;
+    right: 0;
   }
 }

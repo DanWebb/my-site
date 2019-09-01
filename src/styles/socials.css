@@ -1,0 +1,12 @@
+.socials {
+  color: var(--color-tundora);
+
+  & .socials__social,
+  & .socials__img {
+    display: block;
+  }
+
+  &.socials--vertical .socials__social {
+    margin-top: 1em;
+  }
+}
