@@ -1,13 +1,17 @@
-:root {
-  --max-site-width: 1000px;
-}
-
 body {
+  color: var(--color-tundora);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  font-weight: 300;
+}
+
+a {
+  color: var(--color-black);
+  font-weight: 400;
 }
 
 .wrap {
   margin: 0 auto;
   max-width: var(--max-site-width);
+  width: 100%;
 }
