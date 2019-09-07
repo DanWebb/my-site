@@ -1,0 +1,78 @@
+.about {
+  background: #F9F9F9;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: var(--space-xl) 0;
+
+  & .about__items {
+    display: flex;
+  }
+
+  & .about__item {
+    width: 50%;
+  }
+
+  & .about__me {
+    max-width: 20em;
+    padding-right: var(--space);
+    font-size: var(--size-lg);
+
+    & .about__me-avatar {
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+    }
+
+    & .about__me-intro {
+      font-size: var(--size-xl);
+    }
+  }
+
+  & .about__cards {
+    display: flex;
+  }
+
+  & .about__card {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: var(--shadow-subtle);
+    padding: var(--space);
+    margin-bottom: var(--space);
+    width: calc(50% - var(--space-sm));
+
+    &:first-child {
+      margin-right: var(--space);
+    }
+
+    & .about__card-title {
+      font-size: var(--size);
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: var(--space-sm);
+    }
+
+    & .about__card-content {
+      margin-top: 0;
+      margin-bottom: var(--space);
+    }
+  }
+
+  & .about__images {
+    display: flex;
+    margin-top: var(--space);
+  }
+
+  & .about__image {
+    width: calc(33.3333333% - (var(--space) / 3));
+    margin-right: var(--space);
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    & img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

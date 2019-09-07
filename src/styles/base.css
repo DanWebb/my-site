@@ -3,11 +3,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.25;
 }
 
 a {
   color: var(--color-black);
   font-weight: 400;
+  text-decoration: none;
 }
 
 .wrap {
