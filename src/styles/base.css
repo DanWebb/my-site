@@ -14,7 +14,7 @@ a {
 
 .wrap {
   margin: 0 auto;
-  max-width: var(--max-site-width);
+  max-width: calc(var(--max-site-width) + (var(--space) * 2));
   padding: 0 var(--space);
   width: 100%;
 
