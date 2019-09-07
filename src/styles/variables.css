@@ -16,5 +16,11 @@
 
   --size: 1em;
   --size-lg: 1.25em;
-  --size-xl: 1.75em;
+  --size-xl: 1.5em;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --size-xl: 1.75em;
+  }
 }
