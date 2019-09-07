@@ -15,7 +15,7 @@
     }
 
     & .about__me-intro {
-      font-size: var(--size-xl);
+      font-size: calc(var(--size-lg) * 1.25);
     }
   }
 
@@ -31,8 +31,11 @@
     margin-bottom: var(--space);
 
     & .about__card-title {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      font-weight: 600;
       font-size: var(--size);
-      font-weight: normal;
       margin-top: 0;
       margin-bottom: var(--space-sm);
     }
@@ -67,7 +70,6 @@
   @media (min-width: 450px) {
     & .about__cards {
       display: flex;
-      margin-top: 0;
     }
 
     & .about__card {
@@ -76,10 +78,6 @@
       &:first-child {
         margin-right: var(--space);
       }
-    }
-
-    & .about__images {
-      margin-top: var(--space);
     }
 
     & .about__image {
@@ -92,6 +90,14 @@
   }
 
   @media (min-width: 800px) {
+    & .about__cards {
+      margin-top: 0;
+    }
+
+    & .about__images {
+      margin-top: var(--space);
+    }
+
     & .about__items {
       display: flex;
     }
