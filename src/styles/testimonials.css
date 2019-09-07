@@ -14,7 +14,7 @@
   }
 
   & .testimonials__eyebrow {
-    color: #777;
+    color: #666;
     font-size: var(--size-sm);
     font-weight: 200;
   }
@@ -63,7 +63,7 @@
     }
 
     & .testimonials__words {
-      color: #777;
+      color: #666;
       margin: 0;
     }
   }
