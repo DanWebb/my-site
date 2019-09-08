@@ -6,6 +6,15 @@ body {
   line-height: 1.25;
 }
 
+::selection {
+  background: var(--color-radical-red);
+  color: #fff;
+}
+::-moz-selection {
+  background: var(--color-radical-red);
+  color: #fff;
+}
+
 a {
   color: var(--color-black);
   font-weight: 400;
