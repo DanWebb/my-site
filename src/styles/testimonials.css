@@ -5,21 +5,11 @@
     max-width: 400px;
   }
 
-  & .testimonials__eyebrow,
   & .testimonials__title {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: 0;
-  }
-
-  & .testimonials__eyebrow {
-    color: #666;
-    font-size: var(--size-sm);
-    font-weight: 200;
-  }
-
-  & .testimonials__title {
     font-size: 3em;
     line-height: 1;
     font-weight: 900;
@@ -49,6 +39,8 @@
       & img {
         display: block;
         border-radius: 50%;
+        width: 35px;
+        height: auto;
       }
     }
 
@@ -85,6 +77,10 @@
 
     & .testimonials__cards {
       margin-top: 0
+    }
+
+    & .testimonials__card .testimonials__avatar img {
+      width: 50px;
     }
   }
 }
