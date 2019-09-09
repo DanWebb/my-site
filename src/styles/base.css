@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+.mail {
+  color: var(--color-radical-red);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: calc(var(--max-site-width) + (var(--space) * 2));

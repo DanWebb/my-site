@@ -17,6 +17,7 @@
 
   & .testimonials__intro-content {
     font-size: var(--size-lg);
+    max-width: 20em;
   }
 
   & .testimonials__cards {
