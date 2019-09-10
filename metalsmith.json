@@ -15,6 +15,10 @@
           }
         }
       }
-    }
+    },
+    "metalsmith-clean-css": {
+      "files": "**/**/*.css"
+    },
+    "metalsmith-html-minifier": {}
   }
 }
