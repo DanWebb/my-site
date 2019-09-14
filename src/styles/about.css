@@ -16,6 +16,7 @@
 
     & .about__me-intro {
       font-size: calc(var(--size-lg) * 1.25);
+      font-weight: 300;
     }
   }
 
