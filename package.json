@@ -1,0 +1,16 @@
+{
+  "name": "danwebb.co",
+  "version": "1.0.0",
+  "description": "My internet home",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.9",
+    "browserslist": "^4.23.0",
+    "lightningcss": "^1.24.1"
+  }
+}
