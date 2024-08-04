@@ -156,7 +156,7 @@ dw-intro {
 
     &:not(:is(:hover,:focus)) {
       dw-logo-icon {
-        --_background: var(--color-grey);
+        filter: grayscale(70%);
       }
     }
   }
@@ -179,7 +179,7 @@ dw-logo {
     background: var(--_background);
     padding: 0.3em;
     line-height: 1;
-    transition: background var(--transition);
+    transition: background var(--transition), filter var(--transition);
   
     &[variant='writing'] {
       --_background: var(--color-blue);

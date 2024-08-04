@@ -1,6 +1,7 @@
 import path from 'node:path';
 import browserslist from 'browserslist';
 import { bundle, browserslistToTargets } from 'lightningcss';
+import webc from '@11ty/eleventy-plugin-webc';
 
 async function compileCSS(_inputContent, inputPath) {
   const parsed = path.parse(inputPath);
@@ -35,8 +36,11 @@ export default function(eleventyConfig) {
     compile: compileCSS,
   });
 
+  eleventyConfig.addPlugin(webc);
+
   return {
     dir: {
+      layouts: 'layouts',
       input: 'src',
       output: 'dist'
     }
