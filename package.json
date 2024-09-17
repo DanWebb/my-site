@@ -9,11 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.9",
-    "browserslist": "^4.23.0",
-    "lightningcss": "^1.24.1"
-  },
-  "dependencies": {
-    "@11ty/eleventy-plugin-webc": "^0.11.2"
+    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "browserslist": "^4.23.3",
+    "lightningcss": "^1.27.0"
   }
 }

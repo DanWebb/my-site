@@ -1,0 +1,67 @@
+<style>
+  dw-hello {
+    column-gap: var(--space-m);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title img"
+      "intro intro";
+
+    @media (width >= 480px) {
+      grid-template-areas:
+        "title img"
+        "intro .";
+    }
+
+    h1 {
+      font-size: clamp(3em, 10vi, 8em);
+      grid-area: title;
+      margin: 0;
+    }
+
+    img {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: block;
+      grid-area: img;
+      height: auto;
+      width: clamp(5em, 13vi, 10em);
+    }
+
+    p {
+      grid-area: intro;
+      grid-row: span 2;
+      font-size: var(--font-size-3);
+      margin: 0;
+      text-wrap: balance;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    svg {
+      bottom: -0.125em; /* Remove letter dangle */
+      height: 0.85em; /* All caps size reduction to match other lowercase text */
+      position: relative;
+      right: -0.15em; /* Move away from the previous word and closer to the full-stop */
+      width: auto;
+      transition: transform var(--transition);
+
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+</style>
+
+<h1>Hey! I&rsquor;m Dan</h1>
+<img src="/assets/dan-avatar.webp" alt="A photo of Dan" width="64" height="64" />
+<p>
+  I make better websites than this one with the team at
+  <a href="https://etch.co/" target="_blank" rel="external">
+    <dw-etch-logo></dw-etch-logo>
+  </a>.
+</p>

@@ -10,7 +10,21 @@
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/styles/styles.css" webc:keep>
+
+    <!--- Bundled base styles --->
+    <link rel="stylesheet" href="../styles/reset.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/color.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/space.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/transition.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/typography.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/wrap.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/section.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/list.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/grid.css" webc:bucket="styles">
+    <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
+    
+    <!--- Bundled component styles --->
+    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep>
   </head>
   <body @raw="content"></body>
 </html>

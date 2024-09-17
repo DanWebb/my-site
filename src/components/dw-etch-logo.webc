@@ -1,0 +1,15 @@
+<svg
+  webc:root="override"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 76 32"
+  aria-labelledby="etch-logo"
+  role="img"
+  width="79"
+  height="33"
+>
+  <title id="etch-logo">Etch</title>
+  <g><path fill="#F06" d="M0 4L0 20 16 4z" /><path fill="#F06" d="M0 12L0 28 16 28z" /><path fill="#F66" d="M0 12L0 28 16 12z" /></g>
+  <g><path fill="#F06" d="M20 4H28V20H20z" /><path fill="#F06" d="M20 12L20 28 36 28z" /><path fill="#F66" d="M20 12L20 28 36 12z" /></g>
+  <g><path fill="#F06" d="M40 12L40 28 56 28z" /><path fill="#F66" d="M40 12L40 28 56 12z" /></g>
+  <g><path fill="#F06" d="M60 4H68V20H60z" /><path fill="#F06" d="M72 12L60 12 60 16 76 32 76 16z" /><path fill="#F66" d="M60 12L60 32 76 16 72 12z" /></g>
+</svg>

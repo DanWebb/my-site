@@ -1,46 +1,35 @@
-import path from 'node:path';
 import browserslist from 'browserslist';
-import { bundle, browserslistToTargets } from 'lightningcss';
+import { transform, browserslistToTargets } from 'lightningcss';
 import webc from '@11ty/eleventy-plugin-webc';
 
-async function compileCSS(_inputContent, inputPath) {
-  const parsed = path.parse(inputPath);
-
-  if (parsed.name.startsWith('_')) {
-    return;
-  }
-
+async function transformCSS(content) {
   const targets = browserslistToTargets(browserslist('> 0.25% and not dead'));
+  const { code } = transform({
+    code: Buffer.from(content),
+    minify: true,
+    sourceMap: false,
+    targets,
+  });
 
-  return () => {
-    const { code } = bundle({
-      filename: inputPath,
-      minify: true,
-      sourceMap: false,
-      targets,
-    });
-    return code;
-  };
+  return code;
 }
 
 export default function(eleventyConfig) {
   // copy the assets folder to the output directory
   eleventyConfig.addPassthroughCopy('src/assets');
 
-  // Recognize CSS as a "template language"
-  eleventyConfig.addTemplateFormats('css');
-
-  // Process CSS with LightningCSS
-  eleventyConfig.addExtension('css', {
-    outputFileExtension: 'css',
-    compile: compileCSS,
+  eleventyConfig.addPlugin(webc, {
+    components: 'src/components/**/*.webc',
+    bundlePluginOptions: {
+      transforms: [transformCSS],
+    },
   });
-
-  eleventyConfig.addPlugin(webc);
 
   return {
     dir: {
       layouts: 'layouts',
+      includes: 'components',
+      data: 'data',
       input: 'src',
       output: 'dist'
     }

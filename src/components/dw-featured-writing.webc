@@ -1,0 +1,75 @@
+<style>
+  dw-featured-writing {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: var(--color-salmon-3);
+    }
+
+    li {
+      margin-block-end: var(--space-xs);
+    }
+
+    li:last-child {
+      margin-block-end: 0;
+    }
+
+    li > p {
+      font-size: var(--font-size--1);
+      color: var(--color-muted);
+      margin: 0;
+    }
+
+    > a {
+      align-items: center;
+      background: var(--color-white);
+      border: 2px solid var(--color-white);
+      border-radius: var(--space-3xs);
+      color: var(--color-salmon-3);
+      column-gap: var(--space-3xs);
+      display: inline-flex;
+      font-size: var(--font-size--1);
+      line-height: 1;
+      margin-block-start: var(--space-s);
+      padding: var(--space-2xs);
+      text-decoration: none;
+      transition: border var(--transition);
+
+      svg {
+        height: 1em;
+        width: auto;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          border-color: var(--color-salmon-3);
+        }
+      }
+    }
+  }
+</style>
+
+<ul>
+  <li webc:for="post of $data.writing.slice(0, 2)">
+    <a
+      :href="post.url"
+      :rel="post.external ? 'noopener noreferrer' : ''"
+      :target="post.external ? '_blank' : ''"
+      @text="post.title"
+    ></a>
+    <p>
+      Published <time :datetime="post.datetime" @text="post.date"></time>
+      <span webc:if="post.external">
+        on <dw-icon @icon="external"></dw-icon><span @text="post.external"></span>
+      </span>
+    </p>
+  </li>
+</ul>
+
+<a href="/writing">
+  All writing <dw-icon @icon="arrow-right"></dw-icon>
+</a>

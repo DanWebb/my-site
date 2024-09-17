@@ -1,0 +1,35 @@
+/**
+ * CSS grid wrapper for the main content area
+ * https://layout-breakouts-builder.vercel.app/
+ */
+:root {
+  --minimum-content-padding: var(--space-s-2xl);
+
+  --full-max-width: 1fr;
+  --content-max-width: 1400px;
+
+  --full: minmax( var(--minimum-content-padding), 1fr );
+  --content: min( var(--content-max-width), 100% - var(--minimum-content-padding) * 2 );
+}
+
+.wrap, .wrap-full {
+  display: grid;
+  grid-template-columns: 
+    [full-start]
+    var(--full)
+      [content-start]
+      var(--content)
+      [content-end]
+    var(--full)
+    [full-end];
+}
+
+.wrap > *, .wrap-full > * {
+  grid-column: content;
+}
+
+.wrap-full {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: full;
+}

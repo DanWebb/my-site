@@ -1,0 +1,6 @@
+dw-card {
+  display: block;
+  padding: var(--space-3xs) var(--space-xs);
+  background: var(--color-white);
+  border-radius: 3px;
+}
