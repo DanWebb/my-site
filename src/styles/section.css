@@ -1,6 +1,10 @@
 .section {
   padding-block: var(--space-xl-2xl);
 
+  &.section--small {
+    padding-block: var(--space-l-xl);
+  }
+
   &.section--salmon {
     background: var(--color-salmon-1);
   }

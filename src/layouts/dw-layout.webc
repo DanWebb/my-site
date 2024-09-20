@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../styles/section.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/list.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/grid.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/flex.css" webc:bucket="styles">
     <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
     
     <!--- Bundled component styles --->

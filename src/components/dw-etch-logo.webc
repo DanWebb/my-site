@@ -1,13 +1,27 @@
+<style webc:scoped>
+  svg {
+    bottom: -0.125em; /* Remove letter dangle */
+    height: 0.85em; /* All caps size reduction to match other lowercase text */
+    position: relative;
+    right: -0.15em; /* Move away from the previous word and closer to the full-stop */
+    width: auto;
+    transition: transform var(--transition);
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+</style>
+
 <svg
-  webc:root="override"
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 76 32"
-  aria-labelledby="etch-logo"
-  role="img"
+  aria-label="Etch"
   width="79"
   height="33"
 >
-  <title id="etch-logo">Etch</title>
   <g><path fill="#F06" d="M0 4L0 20 16 4z" /><path fill="#F06" d="M0 12L0 28 16 28z" /><path fill="#F66" d="M0 12L0 28 16 12z" /></g>
   <g><path fill="#F06" d="M20 4H28V20H20z" /><path fill="#F06" d="M20 12L20 28 36 28z" /><path fill="#F66" d="M20 12L20 28 36 12z" /></g>
   <g><path fill="#F06" d="M40 12L40 28 56 28z" /><path fill="#F66" d="M40 12L40 28 56 12z" /></g>

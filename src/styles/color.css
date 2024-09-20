@@ -1,23 +1,18 @@
 :root {
   --color-white: #ffffff;
+
   --color-grey-1: #f0f0f0;
   --color-grey-2: #e0e0e0;
   --color-grey-3: #666;
   --color-grey-4: #222;
+
   --color-salmon-1: #fff5f5;
   --color-salmon-2: #fe9a9b;
-  --color-salmon-3: #e30206;
-  --color-red: #f9415d;
-  --color-blue: #417bf9;
-  --color-purple: #bc41f9;
-  --color-green: #4f9905;
+  --color-salmon-3: #fd4447;
+  --color-salmon-4: #e30206;
 
   --color-border: var(--color-grey-2);
   --color-body: var(--color-grey-4);
   --color-muted: var(--color-grey-3);
-  --color-link: #2200cc;
-}
-
-body {
-  color: var(--color-body);
+  --color-link: var(--color-salmon-4);
 }

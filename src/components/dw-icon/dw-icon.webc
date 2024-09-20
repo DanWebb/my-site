@@ -1,5 +1,5 @@
-<style>
-	dw-icon > svg {
+<style webc:scoped>
+	svg {
 		display: inline-block;
 		height: 1em;
 		width: auto;
@@ -8,17 +8,14 @@
 	}
 </style>
 
-<script webc:type="js" webc:root>
-	const path = require('node:path');
-	const Image = require('@11ty/eleventy-img');
-	const basePath = path.join('.', 'src', 'components', 'dw-icon');
+<script webc:type="js">
+	if (!icon) {
+		throw new Error('An icon prop is required');
+	}
 
-	(async () => {
-		const metadata = await Image(path.join(basePath, `${icon}.svg`), {
-			formats: ['svg'],
-			dryRun: true, // Don’t write to the file system
-		});
-
-		return metadata.svg[0].buffer.toString();
-	})();
+	renderSvg(`./src/components/dw-icon/${icon}.svg`, label ? [
+		{ name: 'aria-label', value: label }
+	] : [
+		{ name: 'aria-hidden', value: true }
+	]);
 </script>

@@ -1,6 +1,7 @@
 [
   {
     "title": "Takeaways from JS Nation 2024",
+    "description": "Highlights from Etch teams trip to the biggest JavaScript conference on the planet",
     "date": "Jun 19, 2024",
     "datetime": "2024-06-19",
     "url": "https://etch.co/blog/takeaways-from-js-nation-2024",
@@ -8,6 +9,7 @@
   },
   {
     "title": "CSS web components",
+    "description": "Custom elements as a styling solution",
     "date": "Mar 14, 2024",
     "datetime": "2024-03-14",
     "url": "https://etch.co/blog/css-web-components",
@@ -15,6 +17,7 @@
   },
   {
     "title": "Broken software is bad for everyone",
+    "description": "Poorly built software creates more problems than it solves",
     "date": "Feb 22, 2022",
     "datetime": "2022-02-22",
     "url": "https://etch.co/blog/broken-software-is-bad-for-everyone",
@@ -22,6 +25,7 @@
   },
   {
     "title": "How to build complicated grids using CSS grid",
+    "description": "Exploring how to build and unconventional grid layout using CSS grid",
     "date": "Jun 30, 2018",
     "datetime": "2018-06-30",
     "url": "https://medium.com/@danwebb/how-to-build-complicated-grids-using-css-grid-609b1197cf75",
@@ -29,6 +33,7 @@
   },
   {
     "title": "Better Shopify Theme Development With Parcel JS",
+    "description": "A better local development workflow for building Shopify themes",
     "date": "Jun 1, 2018",
     "datetime": "2018-06-01",
     "url": "https://medium.com/@danwebb/better-shopify-theme-development-with-parcel-js-704f17f367fc",
@@ -36,6 +41,7 @@
   },
   {
     "title": "Effortless animation with React 16.3+ and Popmotion Pose",
+    "description": "Creating animations using the Popmotion Pose library",
     "date": "May 21, 2018",
     "datetime": "2018-05-21",
     "url": "https://medium.com/@danwebb/effortless-animation-with-react-16-3-and-popmotion-pose-674dac34b3c1",

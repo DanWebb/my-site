@@ -30,6 +30,7 @@
 }
 
 body {
+  color: var(--color-body);
   font-family: var(--font-family);
   font-size: var(--font-size-0);
   -webkit-font-smoothing: antialiased;
@@ -67,12 +68,4 @@ a {
 
 ul {
   padding-inline-start: var(--space-s);
-}
-
-.text-small {
-  font-size: var(--font-size--1);
-}
-
-.text-muted {
-  color: var(--color-muted);
 }

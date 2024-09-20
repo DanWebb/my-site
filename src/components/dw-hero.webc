@@ -1,0 +1,27 @@
+<style webc:scoped>
+  :host {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-s-l);
+  }
+
+  h1,
+  dw-logo {
+    font-size: var(--font-size-4);
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+
+    @media (width >= 480px) {
+      font-size: var(--font-size-1);
+    }
+  }
+</style>
+
+<dw-logo :@logo="variant"></dw-logo>
+<div>
+  <h1 @text="title"></h1>
+  <p @text="intro"></p>
+</div>

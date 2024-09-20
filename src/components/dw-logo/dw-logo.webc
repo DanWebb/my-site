@@ -1,0 +1,38 @@
+<style webc:scoped>
+  :host {
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--space-s-l);
+    font-weight: bold;
+    color: var(--color-body);
+    text-decoration: none;
+  }
+  
+  .dw-logo-icon {
+    aspect-ratio: 1;
+    border-radius: 0.2em;
+    block-size: 1.5em;
+    background: var(--color-salmon-3);
+    padding: 0.3em;
+    line-height: 1;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+
+<script webc:type="js">
+  if (!logo) {
+    throw new Error('A logo prop is required');
+  }
+  
+  (async () => {
+    const svg = await renderSvg(`./src/components/dw-logo/${logo}.svg`, [
+      { name: 'aria-hidden', value: true }
+    ]);
+
+    return `<div class="dw-logo-icon">${svg}</div>`;
+  })();
+</script>

@@ -4,9 +4,9 @@ title: Dan’s Website
 ---
 
 <main class="wrap">
-  <section class="section">
+  <header class="section">
     <dw-hello></dw-hello>
-  </section>
+  </header>
   <section class="wrap-full section section--salmon">
     <div class="grid grid--half">
       <div>
@@ -23,7 +23,7 @@ title: Dan’s Website
         </ul>
       </div>
       <div>
-        <h2 class="space-none">Occasional writer</h2>
+        <h2 class="space-none">Occasional Writer</h2>
         <p>
           Sometimes I poke my head up from making things to write about it, when I do that, I put a link to the article here&hellip;
         </p>

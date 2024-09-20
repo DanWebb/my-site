@@ -1,0 +1,18 @@
+---
+layout: dw-layout.webc
+title: Dan’s Writing
+---
+
+<main class="wrap">
+  <header class="wrap-full section section--small section--salmon">
+    <dw-hero
+      @variant="writing"
+      @title="Dan’s Writing"
+      @intro="Ramblings of a software developer"
+    ></dw-hero>
+  </header>
+
+  <section class="section section--small">
+    <dw-writing></dw-writing>
+  </section>
+</main>
