@@ -14,6 +14,7 @@
     <!--- Bundled base styles --->
     <link rel="stylesheet" href="../styles/reset.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/color.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/border.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/space.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/transition.css" webc:bucket="styles">
     <link rel="stylesheet" href="../styles/typography.css" webc:bucket="styles">

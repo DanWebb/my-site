@@ -1,9 +1,4 @@
 <style webc:scoped>
-  :host {
-    display: block;
-    max-width: 600px;
-  }
-
   a {
     font-size: var(--font-size-1);
   }

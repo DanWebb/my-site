@@ -13,7 +13,8 @@
     "date": "Mar 14, 2024",
     "datetime": "2024-03-14",
     "url": "https://etch.co/blog/css-web-components",
-    "external": "etch.co"
+    "external": "etch.co",
+    "featured": true
   },
   {
     "title": "Broken software is bad for everyone",

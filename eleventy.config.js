@@ -18,9 +18,11 @@ async function transformCSS(content) {
 export default function(eleventyConfig) {
   // copy the assets folder to the output directory
   eleventyConfig.addPassthroughCopy('src/assets');
-
+  // eleventy wasn't reloading on css file changes
+  eleventyConfig.addWatchTarget('src/**/*.css');
+  // make the renderSvg function available globally in templates
   eleventyConfig.addJavaScriptFunction('renderSvg', renderSvg);
-
+  // load all components added to the src/components directory
   eleventyConfig.addPlugin(webc, {
     components: 'src/components/**/*.webc',
     bundlePluginOptions: {

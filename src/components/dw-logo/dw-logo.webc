@@ -2,7 +2,7 @@
   :host {
     display: inline-flex;
     align-items: center;
-    column-gap: var(--space-s-l);
+    column-gap: var(--space-xs-s);
     font-weight: bold;
     color: var(--color-body);
     text-decoration: none;
@@ -10,9 +10,9 @@
   
   .dw-logo-icon {
     aspect-ratio: 1;
-    border-radius: 0.2em;
+    border-radius: var(--border-radius);
     block-size: 1.5em;
-    background: var(--color-salmon-3);
+    background: var(--color-salmon-4);
     padding: 0.3em;
     line-height: 1;
 
@@ -20,7 +20,28 @@
       width: 100%;
       height: auto;
     }
+
+    &.dw-logo-icon--botany-banyan {
+      background: var(--color-green-2);
+    }
+  
+    &.dw-logo-icon--photos {
+      background: var(--color-blue-2);
+    }
+  
+    &.dw-logo-icon--testimonials {
+      background: var(--color-yellow-2);
+    }
+
+    &.dw-logo-icon--oux {
+      background: var(--color-purple);
+    }
+
+    &.dw-logo-icon--jdown {
+      background: var(--color-body);
+    }
   }
+
 </style>
 
 <script webc:type="js">
@@ -33,6 +54,6 @@
       { name: 'aria-hidden', value: true }
     ]);
 
-    return `<div class="dw-logo-icon">${svg}</div>`;
+    return `<div class="dw-logo-icon dw-logo-icon--${logo}">${svg}</div><slot />`;
   })();
 </script>

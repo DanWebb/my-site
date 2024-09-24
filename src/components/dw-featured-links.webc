@@ -1,0 +1,86 @@
+<style webc:scoped>
+  ul {
+    display: flex;
+    overflow-x: auto;
+    column-gap: var(--space-m-l);
+  }
+
+  li {
+    flex: 1 0 auto;
+    width: 70%;
+
+    @media (width >= 600px) {
+      width: 34%;
+    }
+  }
+
+  a {
+    --_border-color: var(--border-color);
+    border: var(--border-width) var(--border-style) var(--_border-color);
+    background: var(--color-grey-1);
+    border-radius: var(--border-radius);
+    color: var(--color-body);
+    display: block;
+    height: 100%;
+    padding: var(--space-s-m);
+    position: relative;
+    text-decoration: none;
+    transition: border var(--transition);
+
+    dw-icon {
+      bottom: var(--space-2xs);
+      color: var(--_border-color);
+      position: absolute;
+      right: var(--space-2xs);
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      &.link--botany-banyan {
+        --_border-color: var(--color-green-2);
+      }
+
+      &.link--photos {
+        --_border-color: var(--color-blue-2);
+      }
+
+      &.link--testimonials {
+        --_border-color: var(--color-yellow-2);
+      }
+
+      &.link--oux {
+        --_border-color: var(--color-purple);
+      }
+
+      &.link--jdown {
+        --_border-color: var(--color-body);
+      }
+    }
+  }
+
+  h3 {
+    font-size: var(--font-size-1);
+    margin: 0;
+  }
+
+  p {
+    margin-block-start: var(--space-2xs);
+  }
+</style>
+
+<ul class="list-style-none" role="list">
+  <li webc:for="link of $data.links">
+    <a
+      :href="link.url"
+      :class="`link--${link.logo}`"
+      :rel="link.external ? 'noopener noreferrer' : ''"
+      :target="link.external ? '_blank' : ''"
+    >
+      <h3><dw-logo :@logo="link.logo" @text="link.title"></dw-logo></h3>
+      <p @text="link.description"></p>
+      <dw-icon webc:if="link.external" @icon="external" @label="external website"></dw-icon>
+    </a>
+  </li>
+</ul>

@@ -5,6 +5,7 @@
 		width: auto;
 		position: relative;
 		top: 0.125em;
+		transition: color var(--transition);
 	}
 </style>
 

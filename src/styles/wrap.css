@@ -33,3 +33,7 @@
   grid-template-columns: subgrid;
   grid-column: full;
 }
+
+.wrap-content {
+  max-width: 60ch;
+}

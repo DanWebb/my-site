@@ -12,7 +12,7 @@ title: Dan’s Writing
     ></dw-hero>
   </header>
 
-  <section class="section section--small">
+  <section class="wrap-content section section--small">
     <dw-writing></dw-writing>
   </section>
 </main>

@@ -7,12 +7,13 @@ title: Dan’s Website
   <header class="section">
     <dw-hello></dw-hello>
   </header>
-  <section class="wrap-full section section--salmon">
+  <div class="wrap-full section section--salmon">
     <div class="grid grid--half">
       <div>
-        <h2 class="space-none">Full Stack Developer</h2>
+        <h2 class="section-title">Full Stack Developer</h2>
         <p>
-          Since 2013, I've bridged the gap between disciplines to push projects forward. On a typical week that might involve&hellip;
+          Since 2013, I&rsquor;ve bridged the gap between disciplines to push projects forward.
+          On a typical week that might involve&hellip;
         </p>
         <ul>
           <li>Shipping progressive web apps</li>
@@ -23,12 +24,21 @@ title: Dan’s Website
         </ul>
       </div>
       <div>
-        <h2 class="space-none">Occasional Writer</h2>
+        <h2 class="section-title">Occasional Writer</h2>
         <p>
-          Sometimes I poke my head up from making things to write about it, when I do that, I put a link to the article here&hellip;
+          Sometimes I poke my head up from making things to write about it, when I do that, I
+          put a link to the article here.
         </p>
         <dw-featured-writing></dw-featured-writing>
       </div>
     </div>
+  </div>
+  <nav class="section" aria-labelledby="featured-links-title">
+    <h2 class="section-title" id="featured-links-title">Constant Maker</h2>
+    <p class="wrap-content">
+      Software is never finished so I&rsquor;m always busy tinkering away. Here are some links to
+      corners of the web I tend to in my rare bits of free time.
+    </p>
+    <dw-featured-links></dw-featured-links>
   </section>
 </main>

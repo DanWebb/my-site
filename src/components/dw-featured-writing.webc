@@ -12,7 +12,7 @@
   :host > a {
     align-items: center;
     background: var(--color-white);
-    border: 2px solid var(--color-white);
+    border: var(--border);
     border-radius: var(--space-3xs);
     color: var(--color-salmon-4);
     column-gap: var(--space-3xs);
@@ -33,7 +33,7 @@
 </style>
 
 <ul class="list-style-none" role="list">
-  <li webc:for="post of $data.writing.slice(0, 2)">
+  <li webc:for="post of $data.writing.filter(post => post.featured)">
     <a
       :href="post.url"
       :rel="post.external ? 'noopener noreferrer' : ''"
