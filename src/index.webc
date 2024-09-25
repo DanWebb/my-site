@@ -1,11 +1,13 @@
 ---
 layout: dw-layout.webc
 title: Dan’s Website
+description: The personal website of Dan Webb, a full stack developer @Etch.
 ---
 
 <header class="section">
   <dw-hello></dw-hello>
 </header>
+
 <div class="wrap-full section section-salmon">
   <div class="grid grid-half">
     <div>
@@ -32,6 +34,7 @@ title: Dan’s Website
     </div>
   </div>
 </div>
+
 <nav class="section" aria-labelledby="featured-links-title">
   <div class="wrap-content">
     <h2 class="section-title" id="featured-links-title">Always Making</h2>

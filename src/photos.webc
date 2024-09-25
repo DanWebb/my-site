@@ -1,13 +1,14 @@
 ---
 layout: dw-layout.webc
 title: Dan’s Photos
+description: Collections of photos that are special to me.
 ---
 
 <header class="wrap-full section section-small section-blue">
   <dw-hero
     @variant="photos"
-    @title="Dan’s Photos"
-    @intro="Collections of photos that are special to me."
+    :@title="$data.title"
+    :@intro="$data.description"
   ></dw-hero>
 </header>
 

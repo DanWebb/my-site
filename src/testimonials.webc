@@ -1,13 +1,14 @@
 ---
 layout: dw-layout.webc
 title: Dan’s Testimonials
+description: Some kind words people have said about me and my work.
 ---
 
 <header class="wrap-full section section-small section-yellow">
   <dw-hero
     @variant="testimonials"
-    @title="Dan’s Testimonials"
-    @intro="Some kind words people have said about me and my work."
+    :@title="$data.title"
+    :@intro="$data.description"
   ></dw-hero>
 </header>
 
