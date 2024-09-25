@@ -1,0 +1,16 @@
+---
+layout: dw-layout.webc
+title: Dan’s Photos
+---
+
+<header class="wrap-full section section-small section-blue">
+  <dw-hero
+    @variant="photos"
+    @title="Dan’s Photos"
+    @intro="Collections of photos that are special to me."
+  ></dw-hero>
+</header>
+
+<div class="section-small">
+  <p>Nothing to see here...yet.</p>
+</div>

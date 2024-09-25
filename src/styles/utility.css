@@ -78,6 +78,10 @@
   background: var(--color-yellow-1);
 }
 
+.section-blue {
+  background: var(--color-blue-1);
+}
+
 .section-title {
   margin-block: 0;
 
@@ -87,7 +91,7 @@
 }
 
 /* Remove top padding from stacked sections if they don't have a background color */
-:is(.section, .section-small):not(:is(.section-salmon, .section-yellow)) + :is(.section, .section-small):not(:is(.section-salmon, .section-yellow)) {
+:is(.section, .section-small):not(:is(.section-salmon, .section-yellow, .section-blue)) + :is(.section, .section-small):not(:is(.section-salmon, .section-yellow, .section-blue)) {
   padding-block-start: 0;
 }
 
