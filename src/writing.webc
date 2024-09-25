@@ -3,7 +3,7 @@ layout: dw-layout.webc
 title: Dan’s Writing
 ---
 
-<header class="wrap-full section section--small section--salmon">
+<header class="wrap-full section section-small section-salmon">
   <dw-hero
     @variant="writing"
     @title="Dan’s Writing"
@@ -11,6 +11,6 @@ title: Dan’s Writing
   ></dw-hero>
 </header>
 
-<section class="wrap-content section section--small">
+<div class="wrap-content section section-small">
   <dw-writing></dw-writing>
-</section>
+</div>

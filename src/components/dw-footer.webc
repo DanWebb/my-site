@@ -2,6 +2,7 @@
   :host {
     border-top: var(--border);
     padding-block: var(--space-m-l);
+    margin-block-start: var(--space-l-xl);
   }
 
   .footer-inner {

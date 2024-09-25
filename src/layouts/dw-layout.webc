@@ -13,16 +13,9 @@
 
     <!--- Bundled base styles --->
     <link rel="stylesheet" href="../styles/reset.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/color.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/border.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/space.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/transition.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/typography.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/wrap.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/section.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/list.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/grid.css" webc:bucket="styles">
-    <link rel="stylesheet" href="../styles/flex.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/variables.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/base.css" webc:bucket="styles">
+    <link rel="stylesheet" href="../styles/utility.css" webc:bucket="styles">
     <link rel="stylesheet" :href="getBundleFileUrl('css', 'styles')" webc:keep>
     
     <!--- Bundled component styles --->

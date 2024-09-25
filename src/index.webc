@@ -6,8 +6,8 @@ title: Dan’s Website
 <header class="section">
   <dw-hello></dw-hello>
 </header>
-<div class="wrap-full section section--salmon">
-  <div class="grid grid--half">
+<div class="wrap-full section section-salmon">
+  <div class="grid grid-half">
     <div>
       <h2 class="section-title">Full Stack Developer</h2>
       <p>
@@ -33,10 +33,12 @@ title: Dan’s Website
   </div>
 </div>
 <nav class="section" aria-labelledby="featured-links-title">
-  <h2 class="section-title" id="featured-links-title">Always Making</h2>
-  <p class="wrap-content">
-    I&rsquor;m always busy tinkering away at bits of software, here are a few links to corners of
-    the web I tend to in my rare bits of free time.
-  </p>
+  <div class="wrap-content">
+    <h2 class="section-title" id="featured-links-title">Always Making</h2>
+    <p>
+      I&rsquor;m always busy tinkering away at bits of software, here are a few links to corners of
+      the web I tend to in my rare bits of free time.
+    </p>
+  </div>
   <dw-featured-links></dw-featured-links>
 </nav>

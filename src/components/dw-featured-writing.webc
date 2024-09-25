@@ -13,7 +13,7 @@
     align-items: center;
     background: var(--color-white);
     border: var(--border);
-    border-radius: var(--space-3xs);
+    border-radius: var(--border-radius);
     color: var(--color-salmon-4);
     column-gap: var(--space-3xs);
     display: inline-flex;

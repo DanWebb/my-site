@@ -1,9 +1,0 @@
-:root {
-  --transition-duration: 0.2s;
-  --transition-timing: ease-in-out;
-  --transition: var(--transition-duration) var(--transition-timing);
-
-  @media (prefers-reduced-motion) {
-    --transition-duration: 0s;
-  }
-}

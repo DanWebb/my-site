@@ -1,0 +1,28 @@
+---
+layout: dw-layout.webc
+title: Dan’s Testimonials
+---
+
+<header class="wrap-full section section-small section-yellow">
+  <dw-hero
+    @variant="testimonials"
+    @title="Dan’s Testimonials"
+    @intro="Some kind words people have said about me and my work."
+  ></dw-hero>
+</header>
+
+<div class="wrap-content">
+  <div webc:for="testimonial of $data.testimonials" class="section section-small">
+    <blockquote @text="testimonial.quote"></blockquote>
+    <div class="flex flex-align-center flex-gap-xs-s">
+      <img
+        :src="testimonial.image"
+        alt=""
+        width="50"
+        height="50"
+        class="image-inline image-square image-rounded text-size-3"
+      />
+      <p @text="testimonial.author"></p>
+    </div>
+  </div>
+</div>

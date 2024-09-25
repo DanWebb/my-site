@@ -1,0 +1,150 @@
+/*
+ * Grid
+ */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-s-l);
+}
+
+.grid-half {
+  @media (width >= 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+ * Flex
+ */
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-s-l);
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-gap-xs-s {
+  gap: var(--space-xs-s);
+}
+
+/*
+ * Image
+ */
+
+.image-inline {
+  height: 1em;
+  width: auto;
+}
+
+.image-rounded {
+  border-radius: 50%;
+}
+
+.image-square {
+  aspect-ratio: 1;
+}
+
+/*
+ * List
+ */
+
+.list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Section
+ */
+
+.section {
+  padding-block: var(--space-xl-2xl);
+}
+
+.section-small {
+  padding-block: var(--space-l-xl);
+}
+
+.section-salmon {
+  background: var(--color-salmon-1);
+}
+
+.section-yellow {
+  background: var(--color-yellow-1);
+}
+
+.section-title {
+  margin-block: 0;
+
+  & + p {
+    margin-block-start: var(--space-3xs);
+  }
+}
+
+/* Remove top padding from stacked sections if they don't have a background color */
+:is(.section, .section-small):not(:is(.section-salmon, .section-yellow)) + :is(.section, .section-small):not(:is(.section-salmon, .section-yellow)) {
+  padding-block-start: 0;
+}
+
+/*
+ * Space
+ */
+
+.space-none {
+  margin: 0;
+}
+
+.space-top-none {
+  margin-block-start: 0;
+}
+
+/*
+ * Wrap
+ * CSS grid wrapper for the main content area
+ * @link https://layout-breakouts-builder.vercel.app/
+ */
+
+:root {
+  --full: minmax(var(--wrap-padding), 1fr);
+  --content: min(var(--wrap-max-width), 100% - var(--wrap-padding) * 2);
+}
+
+.wrap, .wrap-full {
+  display: grid;
+  grid-template-columns: 
+    [full-start]
+    var(--full)
+      [content-start]
+      var(--content)
+      [content-end]
+    var(--full)
+    [full-end];
+}
+
+.wrap > *, .wrap-full > * {
+  grid-column: content;
+}
+
+.wrap-full {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: full;
+}
+
+.wrap-content p,
+.wrap-content blockquote {
+  max-width: 60ch;
+}
+
+/*
+ * Text
+ */
+
+.text-size-3 {
+  font-size: var(--font-size-3);
+}
