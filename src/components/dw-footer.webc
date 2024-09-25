@@ -1,0 +1,64 @@
+<style webc:scoped>
+  :host {
+    border-top: var(--border);
+    padding-block: var(--space-m-l);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: var(--color-grey-4);
+    font-size: var(--font-size--1);
+    margin-block: 0;
+  }
+
+  nav {
+    width: 100%;
+
+    @media (width >= 900px) {
+      width: auto;
+    }
+  }
+
+  ul a {
+    color: var(--color-muted);
+    transition: color var(--transition);
+    text-decoration: none;
+    font-size: var(--font-size--1);
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-link);
+      }
+    }
+  }
+</style>
+
+<footer class="wrap" webc:root="override">
+  <div class="footer-inner">
+    <a href="/">
+      <dw-logo @logo="dw">Dan&rsquor;s Website</dw-logo>
+    </a>
+    <nav aria-labelledby="get-in-touch">
+      <h3 id="get-in-touch">Get In Touch</h3>
+      <ul class="list-style-none flex">
+        <li><a href="mailto:mail@danwebb.co">mail@danwebb.co</a></li>
+        <li><a href="https://www.linkedin.com/in/dan-webb-05b674216" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/danwebb" rel="noopener noreferrer" target="_blank">Github</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="site-links">
+      <h3 id="site-links">Site Links</h3>
+      <ul class="list-style-none flex">
+        <li><a href="/writing">Writing</a></li>
+        <li><a href="/photos">Photos</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>

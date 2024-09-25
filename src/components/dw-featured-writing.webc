@@ -5,7 +5,7 @@
 
   li > p {
     font-size: var(--font-size--1);
-    color: var(--color-muted);
+    color: var(--color-grey-4);
     margin: 0;
   }
 

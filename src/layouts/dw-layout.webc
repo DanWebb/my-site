@@ -28,5 +28,8 @@
     <!--- Bundled component styles --->
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep>
   </head>
-  <body @raw="content"></body>
+  <body>
+    <main class="wrap" @raw="content"></main>
+    <dw-footer @logo="dw">Dan&rsquor;s website</dw-footer>
+  </body>
 </html>

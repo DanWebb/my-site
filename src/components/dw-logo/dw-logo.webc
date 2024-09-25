@@ -2,7 +2,7 @@
   :host {
     display: inline-flex;
     align-items: center;
-    column-gap: var(--space-xs-s);
+    column-gap: var(--space-2xs-xs);
     font-weight: bold;
     color: var(--color-body);
     text-decoration: none;

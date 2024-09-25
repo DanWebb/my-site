@@ -4,7 +4,8 @@
   --color-grey-1: #f2f2f2;
   --color-grey-2: #e0e0e0;
   --color-grey-3: #666;
-  --color-grey-4: #222;
+  --color-grey-4: #444;
+  --color-grey-5: #222;
 
   --color-salmon-1: #fff5f5;
   --color-salmon-2: #fecdcd;
@@ -24,7 +25,7 @@
   --color-purple: #be27dc;
 
   --color-border: var(--color-grey-2);
-  --color-body: var(--color-grey-4);
+  --color-body: var(--color-grey-5);
   --color-muted: var(--color-grey-3);
   --color-link: var(--color-salmon-5);
 }
