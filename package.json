@@ -4,10 +4,13 @@
   "description": "My internet home",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.12.2",
+    "npm": "10.5.0"
+  },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0-beta.1",
