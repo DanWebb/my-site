@@ -4,5 +4,8 @@ layout: dw-layout.webc
 
 <div class="section">
   <h1>Nothing to see here...yet.</h1>
-  <p class="text-size-1">Maybe try going back to the <a href="/">home page</a>.</p>
+  <p class="text-size-1">
+    The page you’ve ended up on couldn’t be found. Try going back to
+    the <a href="/">home page</a> instead.
+  </p>
 </header>
