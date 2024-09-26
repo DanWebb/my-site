@@ -149,6 +149,11 @@
  * Text
  */
 
+
+.text-size-1 {
+  font-size: var(--font-size-1);
+}
+
 .text-size-3 {
   font-size: var(--font-size-3);
 }
