@@ -1,0 +1,103 @@
+---
+layout: article.webc
+title: Homemade Websites
+description: Suggestions for creating good ol’fashioned homemade websites.
+published: Sep 30, 2024
+datetime: 2024-09-30
+---
+
+<template webc:type="11ty" 11ty:type="md">
+
+The reality of our day jobs is that many of us may never get the opportunity to make a complete website from scratch, we're usually working on part of a system maybe even something people never see on a tech stack that someone else has decided on.
+
+Some of us do get to make websites from scratch but they'll be driven by business goals and timeline constraints which saps the room for expression and creativity.
+
+This is different from what I’m calling a ”homemade website” &ndash; a good ol’fashioned website built for personal expression, an idea or experiment. I’m here to make the case for making those types of websites.
+
+## Why
+
+Selfishly, I want creators to make their own websites because it makes the web a better place.
+
+- It keeps the web wild, wonderful, creative and free
+- It teaches fundamentals of the web
+- It is a place to experiment and share new ideas
+- It makes the web more diverse and resilient
+
+More importantly though, creators should make a website for themselves.
+
+Creating websites is the best way to learn not only how to create websites, but how the web works as a whole, you get a feeling of how all the parts fit together. I've been doing this for over a decade and I've never built a website without learning something new.
+
+Another reason is that websites can be created to organise and share information in a custom digital format which is unique, personally meaningful and not possible any other way.
+
+For example, the [photos](/photos) section of this website was created because I wanted a custom format for the photos that were most special to me (also I get really fed up with Instagram).
+
+Another example I love is [this little solo backpacking checklist site](https://packing.joshthewanderer.com/) that [Josh](https://joshthewanderer.com/) created for his adventures.
+
+These types of sites can be made for free, with no deadlines, no stakeholders, no pressure, no expectations, no rules.
+
+Make a website for you, for fun, for learning or to experiment!
+
+## How
+
+Here’s some advise I’ve learnt the hard way by creating these types of sites for myself.
+
+### Make it fun
+
+You can have fun hacking away with this, without taking it too seriously.
+
+Most industry ”best practices” are for serious business websites or working within teams.
+
+If you’re making a website for yourself you don't need to spend time on lots of developer tooling, this will probably just slow you down.
+
+This applies to design too &ndash; I really like one idea I got from [Jim](https://jimramsden.com/) that websites could be thought of more like an operating system with each section being like an individual app.
+
+Another way people approach thinking about creating these types of websites is as a kind of digital garden:
+
+<blockquote class="space-bottom-3xs-2xs">
+  ”A garden is a collection of evolving ideas that aren't strictly organised by their publication date. They're inherently exploratory – notes are linked through contextual associations. They aren't refined or complete - notes are published as half-finished thoughts that will grow and evolve over time. They're less rigid, less performative, and less perfect than the personal websites we're used to seeing.”
+</blockquote>
+<p class="space-none">
+  &mdash; Maggie Appleton, <cite><a href="https://maggieappleton.com/garden-history" target="_blank" rel="noopener">A Brief History & Ethos of the Digital Garden</a></cite>
+</p>
+
+This can take the pressure off getting things right first swing, a garden is being constantly tended to and growing into different shapes over time.
+
+Break conventions and get creative.
+
+### Focus on what’s important
+
+Nobody cares about the website you never shipped.
+
+Content should come first, build the website around the content you have now, not the content you might have in the future. Fancy styles or functionality can be a distraction when starting out.
+
+The initial version of [Botany Banyan](https://botanybanyan.co.uk) is HTML-only for this reason. Shipping as HTML-only feels somehow rebellious but I had all the content stored as private notes in Notion which wasn’t helping anyone, sharing it might not either, but at least it’s a possible starting point.
+
+Websites are never finished so don't get caught up with making it perfect.
+
+Create it to scratch your itch first. Dreams about it going viral, winning leads or ever making an income will come as a side-effect. Or not...it shouldn’t matter because you made it for yourself anyway.
+
+### Avoid dependencies, build steps and pre-built templates
+
+Use the web. Semantic HTML is accessible, future proof and responsive by default.
+
+Web components and other browser features don't require a build step. Avoid reaching for NPM install or adding build steps as much as possible or you'll loath working on it 6 months.
+
+Traditional homemade websites are crafted from the ground up, making it a personal expression, pre-built templates have their place but not here. I'm not suggesting this as some purest way to create websites &ndash; I honestly think this is the way to get the most out of creating it and you might be surprised how quickly things come together without a template.
+
+If you’re reluctant to follow this advise because you think the output will be poor, then I’d still suggest following it, anything worth doing is worth doing poorly, how else can we learn.
+
+## When
+
+Static websites can be hosted for free and most hosting providers offer a free subdomain, so the only real necessary investment is time.
+
+As a dad who works full-time and enjoys the outdoors I know that getting free time for deep creative work can be tough and I’ve had long dry spells where little to no work has gone into making these kinds of sites.
+
+So, I’m writing this as much to myself as I am to others when I suggest that when inspiration hits it’s worth carving out the time to make something because usually it brings lasting meaningful value.
+
+I hope this inspires you to make a homemade website, I’d love to see what you come up with! I'll leave you with a quote from this [highly recommended inspirational article from Sara Joy](https://sarajoy.dev/blog/write-websites/).
+
+<blockquote>
+  Enbies and gentlefolk of the class of ’24: Write websites. If I could offer you only one tip for the future, coding would be it. 
+</blockquote>
+
+</template>

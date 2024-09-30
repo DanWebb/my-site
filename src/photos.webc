@@ -1,16 +1,9 @@
 ---
-layout: dw-layout.webc
+layout: page.webc
+variant: photos
 title: Dan’s Photos
 description: Collections of photos that are special to me.
 ---
-
-<header class="wrap-full section section-small section-blue">
-  <dw-hero
-    @variant="photos"
-    :@title="$data.title"
-    :@intro="$data.description"
-  ></dw-hero>
-</header>
 
 <div class="section-small">
   <p>Nothing to see here...yet.</p>

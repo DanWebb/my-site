@@ -1,6 +1,8 @@
 import browserslist from 'browserslist';
 import { transform, browserslistToTargets } from 'lightningcss';
 import webc from '@11ty/eleventy-plugin-webc';
+import markdownIt from 'markdown-it';
+import mdLinkAttr from 'markdown-it-link-attributes';
 import renderSvg from './lib/renderSvg.js';
 
 async function transformCSS(content) {
@@ -18,8 +20,8 @@ async function transformCSS(content) {
 export default function(eleventyConfig) {
   // copy the assets folder to the output directory
   eleventyConfig.addPassthroughCopy('src/assets');
-  // eleventy wasn't reloading on css file changes
-  eleventyConfig.addWatchTarget('src/**/*.css');
+  // eleventy wasn't reloading on css and data file changes
+  eleventyConfig.addWatchTarget('src/styles/*.css');
   // make the renderSvg function available globally in templates
   eleventyConfig.addJavaScriptFunction('renderSvg', renderSvg);
   // load all components added to the src/components directory
@@ -28,6 +30,18 @@ export default function(eleventyConfig) {
     bundlePluginOptions: {
       transforms: [transformCSS],
     },
+  });
+  // Support markdown templates in webc using <template webc:type="11ty" 11ty:type="md">
+	eleventyConfig.setLibrary('md', markdownIt({
+		html: true,
+		breaks: true,
+		linkify: true,
+	}));
+  eleventyConfig.amendLibrary('md', (md) => {
+    md.use(mdLinkAttr, {
+      pattern: /^https:/,
+      attrs: { target: '_blank', rel: 'noopener' }
+    });
   });
 
   return {

@@ -49,8 +49,8 @@
       <h3 id="get-in-touch">Get In Touch</h3>
       <ul class="list-style-none flex">
         <li><a href="mailto:mail@danwebb.co">mail@danwebb.co</a></li>
-        <li><a href="https://www.linkedin.com/in/dan-webb-05b674216" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/danwebb" rel="noopener noreferrer" target="_blank">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/dan-webb-05b674216" rel="noopener" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/danwebb" rel="noopener" target="_blank">Github</a></li>
       </ul>
     </nav>
     <nav aria-labelledby="site-links">

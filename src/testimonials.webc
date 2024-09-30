@@ -1,29 +1,20 @@
 ---
-layout: dw-layout.webc
+layout: page.webc
+variant: testimonials
 title: Dan’s Testimonials
 description: Some kind words people have said about me and my work.
 ---
 
-<header class="wrap-full section section-small section-yellow">
-  <dw-hero
-    @variant="testimonials"
-    :@title="$data.title"
-    :@intro="$data.description"
-  ></dw-hero>
-</header>
-
-<div class="wrap-content">
-  <div webc:for="testimonial of $data.testimonials" class="section section-small">
-    <blockquote @text="testimonial.quote"></blockquote>
-    <div class="flex flex-align-center flex-gap-xs-s">
-      <img
-        :src="testimonial.image"
-        alt=""
-        width="50"
-        height="50"
-        class="image-inline image-square image-rounded text-size-3"
-      />
-      <p @text="testimonial.author"></p>
-    </div>
+<div webc:for="testimonial of $data.testimonials" class="section-small wrap-content">
+  <blockquote @text="testimonial.quote"></blockquote>
+  <div class="flex flex-align-center flex-gap-xs-s">
+    <img
+      :src="testimonial.image"
+      alt=""
+      width="50"
+      height="50"
+      class="image-inline image-square image-rounded text-size-3"
+    />
+    <p @text="testimonial.author"></p>
   </div>
 </div>

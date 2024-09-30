@@ -1,0 +1,15 @@
+---
+layout: layout.webc
+---
+
+<div class="wrap">
+  <header :class="`wrap-full section section-small section-${variant}`">
+    <dw-hero
+      :@variant="variant"
+      :@title="$data.title"
+      :@intro="$data.description"
+    ></dw-hero>
+  </header>
+</div>
+
+<main class="wrap wrap-content" @raw="content"></main>

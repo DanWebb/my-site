@@ -1,8 +1,16 @@
 [
   {
+    "title": "Homemade websites",
+    "description": "Suggestions for creating good ol’fashioned homemade websites.",
+    "published": "Sep 30, 2024",
+    "datetime": "2024-09-30",
+    "url": "/writing/homemade-websites",
+    "featured": true
+  },
+  {
     "title": "Takeaways from JS Nation 2024",
     "description": "Highlights from Etch teams trip to the biggest JavaScript conference on the planet",
-    "date": "Jun 19, 2024",
+    "published": "Jun 19, 2024",
     "datetime": "2024-06-19",
     "url": "https://etch.co/blog/takeaways-from-js-nation-2024",
     "external": "etch.co"
@@ -10,7 +18,7 @@
   {
     "title": "CSS web components",
     "description": "Custom elements as a styling solution",
-    "date": "Mar 14, 2024",
+    "published": "Mar 14, 2024",
     "datetime": "2024-03-14",
     "url": "https://etch.co/blog/css-web-components",
     "external": "etch.co",
@@ -19,7 +27,7 @@
   {
     "title": "Broken software is bad for everyone",
     "description": "Poorly built software creates more problems than it solves",
-    "date": "Feb 22, 2022",
+    "published": "Feb 22, 2022",
     "datetime": "2022-02-22",
     "url": "https://etch.co/blog/broken-software-is-bad-for-everyone",
     "external": "etch.co"
@@ -27,7 +35,7 @@
   {
     "title": "How to build complicated grids using CSS grid",
     "description": "Exploring how to build and unconventional grid layout using CSS grid",
-    "date": "Jun 30, 2018",
+    "published": "Jun 30, 2018",
     "datetime": "2018-06-30",
     "url": "https://medium.com/@danwebb/how-to-build-complicated-grids-using-css-grid-609b1197cf75",
     "external": "medium.com"
@@ -35,7 +43,7 @@
   {
     "title": "Better Shopify Theme Development With Parcel JS",
     "description": "A better local development workflow for building Shopify themes",
-    "date": "Jun 1, 2018",
+    "published": "Jun 1, 2018",
     "datetime": "2018-06-01",
     "url": "https://medium.com/@danwebb/better-shopify-theme-development-with-parcel-js-704f17f367fc",
     "external": "medium.com"
@@ -43,7 +51,7 @@
   {
     "title": "Effortless animation with React 16.3+ and Popmotion Pose",
     "description": "Creating animations using the Popmotion Pose library",
-    "date": "May 21, 2018",
+    "published": "May 21, 2018",
     "datetime": "2018-05-21",
     "url": "https://medium.com/@danwebb/effortless-animation-with-react-16-3-and-popmotion-pose-674dac34b3c1",
     "external": "medium.com"

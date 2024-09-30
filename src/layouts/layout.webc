@@ -26,7 +26,7 @@
     <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep>
   </head>
   <body>
-    <main class="wrap" @raw="content"></main>
-    <dw-footer @logo="dw">Dan&rsquor;s website</dw-footer>
+    <div @raw="content"></div>
+    <dw-footer></dw-footer>
   </body>
 </html>

@@ -1,47 +1,49 @@
 ---
-layout: dw-layout.webc
+layout: layout.webc
 title: Dan’s Website
 description: The personal website of Dan Webb, a full stack developer @Etch.
 ---
 
-<header class="section">
+<header class="wrap section">
   <dw-hello></dw-hello>
 </header>
 
-<div class="wrap-full section section-salmon">
-  <div class="grid grid-half">
-    <div>
-      <h2 class="section-title">Full Stack Developer</h2>
-      <p>
-        Since 2013, I&rsquor;ve bridged the gap between disciplines to push projects forward.
-        On a typical week that might involve&hellip;
-      </p>
-      <ul>
-        <li>Shipping progressive web apps</li>
-        <li>Obsessing over user experiences</li>
-        <li>Building <abbr title="Application Programming Interfaces">APIs</abbr> to wrangle data into place</li>
-        <li>Crafting accessible design system components</li>
-        <li>Supporting people that use the software I help build</li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="section-title">Occasional Writer</h2>
-      <p>
-        Sometimes I poke my head up from making things to write about it, when I do that, I
-        put a link to the article here.
-      </p>
-      <dw-featured-writing></dw-featured-writing>
+<main class="wrap">
+  <div class="wrap-full section section-salmon">
+    <div class="grid grid-half">
+      <div>
+        <h2 class="section-title">Full Stack Developer</h2>
+        <p>
+          Since 2013, I&rsquor;ve bridged the gap between disciplines to push projects forward.
+          On a typical week that might involve&hellip;
+        </p>
+        <ul>
+          <li>Shipping progressive web apps</li>
+          <li>Obsessing over user experiences</li>
+          <li>Building <abbr title="Application Programming Interfaces">APIs</abbr> to wrangle data into place</li>
+          <li>Crafting accessible design system components</li>
+          <li>Supporting people that use the software I help build</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title">Occasional Writer</h2>
+        <p>
+          Sometimes I poke my head up from making things to write about it, when I do that, I
+          put a link to the article here.
+        </p>
+        <dw-featured-writing></dw-featured-writing>
+      </div>
     </div>
   </div>
-</div>
-
-<nav class="section" aria-labelledby="featured-links-title">
-  <div class="wrap-content">
-    <h2 class="section-title" id="featured-links-title">Always Making</h2>
-    <p>
-      I&rsquor;m always busy tinkering away at bits of software, here are a few links to corners of
-      the web I tend to in my rare bits of free time.
-    </p>
-  </div>
-  <dw-featured-links></dw-featured-links>
-</nav>
+  
+  <nav class="section" aria-labelledby="featured-links-title">
+    <div class="wrap-content">
+      <h2 class="section-title" id="featured-links-title">Always Making</h2>
+      <p>
+        I&rsquor;m always busy tinkering away at bits of software, here are a few links to corners of
+        the web I tend to in my rare bits of free time.
+      </p>
+    </div>
+    <dw-featured-links></dw-featured-links>
+  </nav>
+</main>

@@ -36,12 +36,12 @@
   <li webc:for="post of $data.writing.filter(post => post.featured)">
     <a
       :href="post.url"
-      :rel="post.external ? 'noopener noreferrer' : ''"
+      :rel="post.external ? 'noopener' : ''"
       :target="post.external ? '_blank' : ''"
       @text="post.title"
     ></a>
     <p>
-      Published <time :datetime="post.datetime" @text="post.date"></time>
+      Published <time :datetime="post.datetime" @text="post.published"></time>
       <span webc:if="post.external">
         on <dw-icon @icon="external" @label="external website"></dw-icon><span @text="post.external"></span>
       </span>

@@ -1,0 +1,20 @@
+---
+layout: layout.webc
+---
+
+<div class="wrap">
+  <header class="wrap-full section-xsmall section-writing">
+    <a href="/writing"><dw-logo @logo="writing">Dan’s Writing</dw-logo></a>
+  </header>
+</div>
+
+<main class="wrap wrap-content">
+  <div class="section-small">
+    <h1 @text="title"></h1>
+    <p class="space-none text-color-muted">
+      Published <time :datetime="datetime" @text="published"></time>
+    </p>
+  </div>
+
+  <div class="section-small" @raw="content"></div>
+</main>

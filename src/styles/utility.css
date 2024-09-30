@@ -70,15 +70,22 @@
   padding-block: var(--space-l-xl);
 }
 
-.section-salmon {
+.section-xsmall {
+  padding-block: var(--space-xs);
+}
+
+.section-salmon,
+.section-writing {
   background: var(--color-salmon-1);
 }
 
-.section-yellow {
+.section-yellow,
+.section-testimonials {
   background: var(--color-yellow-1);
 }
 
-.section-blue {
+.section-blue,
+.section-photos {
   background: var(--color-blue-1);
 }
 
@@ -105,6 +112,10 @@
 
 .space-top-none {
   margin-block-start: 0;
+}
+
+.space-bottom-3xs-2xs {
+  margin-block-end: var(--space-3xs-2xs);
 }
 
 /*
@@ -140,8 +151,15 @@
   grid-column: full;
 }
 
-.wrap-content p,
-.wrap-content blockquote {
+.wrap-content :is(
+  p,
+  li,
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4
+) {
   max-width: 60ch;
 }
 
@@ -149,6 +167,9 @@
  * Text
  */
 
+.text-color-muted {
+  color: var(--color-muted);
+}
 
 .text-size-1 {
   font-size: var(--font-size-1);

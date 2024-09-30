@@ -1,0 +1,10 @@
+---
+layout: page.webc
+variant: writing
+title: Dan’s Writing
+description: Ramblings of a software developer.
+---
+
+<div class="wrap-content section-small">
+  <dw-writing></dw-writing>
+</div>

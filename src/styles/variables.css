@@ -86,7 +86,7 @@
   --font-size-0: clamp(1rem, 0.9259rem + 0.3704vw, 1.25rem);
   --font-size-1: clamp(1.2rem, 1.0926rem + 0.537vw, 1.5625rem);
   --font-size-2: clamp(1.44rem, 1.288rem + 0.7602vw, 1.9531rem);
-  --font-size-3: clamp(1.728rem, 1.5166rem + 1.0569vw, 2.4414rem);
+  --font-size-3: clamp(1.628rem, 1.4166rem + 1.0569vw, 2.2414rem);
   --font-size-4: clamp(2.0736rem, 1.7838rem + 1.4491vw, 3.0518rem);
   --font-size-5: clamp(2.4883rem, 2.0953rem + 1.965vw, 3.8147rem);
 
