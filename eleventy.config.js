@@ -1,6 +1,7 @@
 import browserslist from 'browserslist';
 import { transform, browserslistToTargets } from 'lightningcss';
 import webc from '@11ty/eleventy-plugin-webc';
+import { eleventyImagePlugin } from '@11ty/eleventy-img';
 import markdownIt from 'markdown-it';
 import mdLinkAttr from 'markdown-it-link-attributes';
 import renderSvg from './lib/renderSvg.js';
@@ -24,9 +25,22 @@ export default function(eleventyConfig) {
   eleventyConfig.addWatchTarget('src/styles/*.css');
   // make the renderSvg function available globally in templates
   eleventyConfig.addJavaScriptFunction('renderSvg', renderSvg);
+  // support eleventy-image https://www.11ty.dev/docs/plugins/image
+  eleventyConfig.addPlugin(eleventyImagePlugin, {
+		formats: ['webp'],
+    widths: [800, 1600],
+		urlPath: '/assets/photos/',
+		defaultAttributes: {
+      sizes: '100vw',
+			loading: 'lazy',
+		},
+	});
   // load all components added to the src/components directory
   eleventyConfig.addPlugin(webc, {
-    components: 'src/components/**/*.webc',
+    components: [
+      'src/components/**/*.webc',
+			'npm:@11ty/eleventy-img/*.webc',
+		],
     bundlePluginOptions: {
       transforms: [transformCSS],
     },

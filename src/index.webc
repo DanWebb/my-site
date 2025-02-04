@@ -10,7 +10,7 @@ description: The personal website of Dan Webb, a full stack developer @Etch.
 
 <main class="wrap">
   <div class="wrap-full section section-salmon">
-    <div class="grid grid-half">
+    <div class="grid grid-1-1">
       <div>
         <h2 class="section-title">Full Stack Developer</h2>
         <p>

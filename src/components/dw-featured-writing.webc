@@ -1,3 +1,13 @@
+<!---
+  {
+    "title": "Botany Banyan",
+    "logo": "botany-banyan",
+    "url": "https://botanybanyan.co.uk",
+    "external": true,
+    "description": "A website dedicated to storing my fascinations with plant life."
+  },
+--->
+
 <style webc:scoped>
   li:not(:last-child) {
     margin-block-end: var(--space-xs);

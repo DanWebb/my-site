@@ -1,0 +1,109 @@
+---
+layout: album.webc
+tags: album
+title: ⛰️ Phu Kradueng
+description: A sweaty unforgettable 2 day adventure up a mountain.
+featured: ./src/photos/phu-kradueng/view.webp
+location: Loei, Thailand
+taken: 14 Feb, 2023
+updated: 04 Nov, 2024
+count: 10
+---
+
+<p class="text-size-1">
+	Phu Kradueng is a national park in Loei, Thailand set on top of a flat mountain summit plateau
+	which covers 60km² and has a max elevation of 1,316 meters high.
+</p>
+
+<p>
+	When my wife and I set of, we knew nothing about the mountain. All we had to go on was an
+	over Instagramed photo of <a href="https://en.wikipedia.org/wiki/Phu_Kradueng_National_Park#/media/File:Lom_Sak_Cliff_(I).jpg" target="_blank" rel="noopener">Lom sak cliff</a>.
+</p>
+
+<p>
+	The night before we set off, we stayed at a nearby goat farm that put its converted barn on
+	AirBNB, it was an ideal place to rest before the hike.
+</p>
+
+<div class="grid grid-1-1">
+	<figure>
+		<img
+			webc:is="eleventy-image"
+			src="./src/photos/phu-kradueng/farm.webp"
+			alt="Sitting on a balcony with fields and the sun setting in the background"
+			class="image-widescreen"
+		/>
+		<figcaption>Watching the sunset</figcaption>
+	</figure>
+	<figure>
+		<img
+			webc:is="eleventy-image"
+			src="./src/photos/phu-kradueng/bbq.webp"
+			alt="A table full of Thai BBQ food"
+			class="image-widescreen"
+		/>
+		<figcaption>Fueling up with a Thai BBQ</figcaption>
+	</figure>
+</div>
+
+<p>
+	We left the farm at about 8am, we thought it’d be a fairly leisurely hike, so this would give us
+	plenty of time before the sun was at its hottest. We were wrong. By the time we started the ascent
+	it was already 9:00AM and it was soon pushing a humid 30°C.
+</p>
+
+<p>
+	We were pleased to reach the first major checkpoint by about 11:00AM, greeted by vendors selling
+	food and much needed ice drinks as well as a stunning view. I thought to myself that it looked
+	like we were almost there!
+</p>
+
+<figure>
+	<img
+		webc:is="eleventy-image"
+		src="./src/photos/phu-kradueng/view.webp"
+		alt="Looking over the edge of a cliff with a view of a valley below"
+		class="image-widescreen"
+	/>
+	<figcaption>The view from the first checkpoint</figcaption>
+</figure>
+
+<p>
+	I got talking to a couple who had been up the mountain before, they told me that we were only
+	about a quarter of the way up and that the hardest part was yet to come. They laughed at the
+	shocked expression on my face, I had definitely underestimated this mountain.
+</p>
+
+<p>
+	We pushed on the winding rocky steep path through the jungle, the heat was relentless but frequent
+	checkpoints with vendors selling drinks and snacks kept us going throughout the day.
+</p>
+
+<figure>
+	<img
+		webc:is="eleventy-image"
+		src="./src/photos/phu-kradueng/collage.webp"
+		alt="A collage of four photos showing a rocky paths through the jungle and 2 lizards on a tree"
+	/>
+	<figcaption>Lizards and rocky jungle path</figcaption>
+</figure>
+
+<p>
+	On the way up we were passed by men and women who are paid to carry luggage and resources up the
+	mountain, some of these heroes were over twice my age and carrying up to eight bags at once on
+	large bamboo poles.
+</p>
+
+<figure>
+	<img
+		webc:is="eleventy-image"
+		src="./src/photos/phu-kradueng/workers.webp"
+		alt="Two men carrying luggage on large bamboo poles"
+		class="image-widescreen"
+	/>
+	<figcaption>These two told us they go up and down three times a day</figcaption>
+</figure>
+
+<p>
+	
+</p>

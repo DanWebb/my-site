@@ -7,9 +7,15 @@
   gap: var(--space-s-l);
 }
 
-.grid-half {
+.grid-1-1 {
   @media (width >= 600px) {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-1-1-1 {
+  @media (width >= 600px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -46,6 +52,11 @@
 
 .image-square {
   aspect-ratio: 1;
+}
+
+.image-widescreen {
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 /*

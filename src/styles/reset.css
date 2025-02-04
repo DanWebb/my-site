@@ -7,3 +7,7 @@
 body {
   margin: 0;
 }
+
+figure {
+  margin: 1.5rem 0;
+}

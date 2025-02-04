@@ -1,0 +1,119 @@
+<style webc:scoped>
+  ul {
+    display: grid;
+    gap: var(--space-m);
+    grid-template-columns: 1fr;
+
+    @media (width >= 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  a {
+    --_border-color: var(--border-color);
+    background: var(--color-grey-1);
+    border: var(--border-width) var(--border-style) var(--_border-color);
+    border-radius: var(--border-radius);
+    color: var(--color-grey-4);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    transition: border var(--transition);
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      --_border-color: var(--color-blue-2);
+    }
+  }
+
+  img {
+    aspect-ratio: 1.5 / 1;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: var(--font-size-0);
+    margin: 0;
+
+    @media (width >= 600px) {
+      font-size: var(--font-size-1);
+    }
+  }
+
+  p {
+    margin-block-start: var(--space-2xs);
+    font-size: var(--font-size--1);
+
+    @media (width >= 600px) {
+      font-size: var(--font-size-0);
+    }
+  }
+
+  .content {
+    padding: var(--space-xs) var(--space-s);
+
+    .meta {
+      font-size: var(--font-size--1);
+      color: var(--color-muted);
+      margin: 0;
+    }
+  }
+
+  .image {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      user-select: none;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+
+    .count {
+      color: var(--color-white);
+      font-size: var(--font-size--1);
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: var(--space-xs) var(--space-s);
+      z-index: 1;
+    }
+  }
+</style>
+
+<ul class="list-style-none" role="list">
+  <li webc:for="album of $data.collections.album">
+    <a :href="`/photos/${slugify(album.data.title)}`">
+      <div class="image">
+        <img
+          webc:is="eleventy-image"
+          :src="album.data.featured"
+          :width="[400]"
+          alt=""
+        />
+        <span class="count" @text="`${album.data.count} photos`"></span>
+      </div>
+      <div class="content">
+        <h2 @text="album.data.title"></h2>
+        <p class="description" @text="album.data.description"></p>
+        <p class="meta">
+          Taken <time :datetime="album.data.taken" @text="album.data.taken"></time>
+          in <span @text="album.data.location"></span>
+        </p>
+      </div>
+    </a>
+  </li>
+</ul>
