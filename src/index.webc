@@ -12,12 +12,13 @@ description: The personal website of Dan Webb, a full stack developer @Etch.
   <div class="wrap-full section section-salmon">
     <div class="grid grid-half">
       <div>
-        <h2 class="section-title">Full Stack Developer</h2>
+        <h2 class="section-title">Software Developer</h2>
         <p>
-          Since 2013, I&rsquor;ve bridged the gap between disciplines to push projects forward.
-          On a typical week that might involve&hellip;
+          My current focus is building a full-stack application and improving a couple
+          of established design systems. A typical week might involve&hellip;
         </p>
         <ul>
+          <li>Communicating across clients and teams</li>
           <li>Shipping progressive web apps</li>
           <li>Obsessing over user experiences</li>
           <li>Building <abbr title="Application Programming Interfaces">APIs</abbr> to wrangle data into place</li>
@@ -35,15 +36,4 @@ description: The personal website of Dan Webb, a full stack developer @Etch.
       </div>
     </div>
   </div>
-  
-  <nav class="section" aria-labelledby="featured-links-title">
-    <div class="wrap-content">
-      <h2 class="section-title" id="featured-links-title">Always Making</h2>
-      <p>
-        I&rsquor;m always busy tinkering away at bits of software, here are a few links to corners of
-        the web I tend to in my rare bits of free time.
-      </p>
-    </div>
-    <dw-featured-links></dw-featured-links>
-  </nav>
 </main>

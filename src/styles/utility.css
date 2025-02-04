@@ -118,6 +118,10 @@
   margin-block-end: var(--space-3xs-2xs);
 }
 
+.space-bottom-l-xl {
+  margin-block-end: var(--space-l-xl);
+}
+
 /*
  * Wrap
  * CSS grid wrapper for the main content area

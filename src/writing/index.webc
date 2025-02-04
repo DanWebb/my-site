@@ -5,6 +5,6 @@ title: Dan’s Writing
 description: Ramblings of a software developer.
 ---
 
-<div class="wrap-content section-small">
+<div class="wrap-content section-small space-bottom-l-xl">
   <dw-writing></dw-writing>
 </div>

@@ -2,7 +2,6 @@
   :host {
     border-top: var(--border);
     padding-block: var(--space-m-l);
-    margin-block-start: var(--space-l-xl);
   }
 
   .footer-inner {
@@ -57,7 +56,6 @@
       <h3 id="site-links">Site Links</h3>
       <ul class="list-style-none flex">
         <li><a href="/writing">Writing</a></li>
-        <li><a href="/photos">Photos</a></li>
         <li><a href="/testimonials">Testimonials</a></li>
       </ul>
     </nav>
