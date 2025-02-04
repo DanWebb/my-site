@@ -1,5 +1,23 @@
 [
   {
+    "title": "Pedantic about semantics",
+    "description": "The role of semantics within design systems.",
+    "published": "Oct 31, 2024",
+    "datetime": "2024-10-31",
+    "url": "https://etch.co/blog/pedantic-about-semantics",
+    "external": "etch.co",
+    "featured": true
+  },
+  {
+    "title": "Money Input",
+    "description": "Advise for requesting monetary values in form fields.",
+    "published": "Oct 02, 2024",
+    "datetime": "2024-10-02",
+    "url": "https://etch.co/blog/money-input",
+    "external": "etch.co",
+    "featured": true
+  },
+  {
     "title": "Takeaways from JS Nation 2024",
     "description": "Highlights from Etch teams trip to the biggest JavaScript conference on the planet",
     "published": "Jun 19, 2024",
